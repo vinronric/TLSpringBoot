@@ -62,6 +62,18 @@ public class HomeController {
 		return mv;
 	}
 	
+	@RequestMapping("devide")
+	public ModelAndView devide(@RequestParam("t1") int t1, @RequestParam("t2") int t2, ModelAndView mv){
+		System.out.println("devide method is called in HomeController");
+		System.out.println("t1 : " + t1);
+		System.out.println("t2 : " + t2);
+		int r= t1/t2;
+		System.out.println("r : " + r);
+		mv.addObject("res", r);
+		mv.setViewName("result");
+		return mv;
+	}
+	
 	@RequestMapping("addAlien")
 	public ModelAndView addAlien(@ModelAttribute("alien") Alien alien, ModelAndView mv){
 		System.out.println("addAlien method is called in HomeController");

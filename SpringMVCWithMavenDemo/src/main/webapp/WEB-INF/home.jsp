@@ -15,6 +15,16 @@
 	       <Tr><td><input type="submit"></td></Tr>
 	    </Table>
     </form>
+        <br></br>
+    <b>devide</b>
+    <form action="devide" method="post">
+	    <Table border="1">
+	       <tr><td>Enter First Number : </td><td><input type="text" name="t1"></td></tr>
+	       <tr><td>Enter Second Number : </td><td><input type="text" name="t2"></td></tr>
+	       <Tr><td><input type="submit"></td></Tr>
+	    </Table>
+    </form>
+    <br></br>
      <b>Alien User - Addition</b>
     <form action="addAlien" method="post">
 	    <Table border="1">
